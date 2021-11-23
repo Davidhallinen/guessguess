@@ -1,0 +1,28 @@
+ def guess(x):
+	random_number = random.randint(1,x)
+	guess = 0
+	while guess != random_number:
+		guess = int(input(f'guess a number between 1 and {x}:'))
+		if guess < random_number:
+			print('Sorry, guess again, Too low.')
+		elif guess > random_number:
+			print('sorry, guess again. Too high.')
+	print('yay, congrats. you have guessed the number.')
+
+	
+>>> guess(20)
+guess a number between 1 and 20:1
+Sorry, guess again, Too low.
+guess a number between 1 and 20:20
+sorry, guess again. Too high.
+guess a number between 1 and 20:3
+Sorry, guess again, Too low.
+guess a number between 1 and 20:10
+Sorry, guess again, Too low.
+guess a number between 1 and 20:13
+Sorry, guess again, Too low.
+guess a number between 1 and 20:15
+sorry, guess again. Too high.
+guess a number between 1 and 20:14
+yay, congrats. you have guessed the number.
+>>> 
